@@ -11,7 +11,7 @@ def get_all():
 def get_by_id(emp_id):
     employees = read_data()
     for emp in employees:
-        if emp['id'] == emp_id:
+        if emp['id','name'] == emp_id:
             return emp
     return None
 
